@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* root */
+
 :root {
     --color-light-blue: #b4d0e7;
     --color-dark: #000000;
@@ -34,13 +36,55 @@ body {
     color: var(--color-dark);
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* page macro */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-white);
+}
+
+
+/* containers  */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
 /* utilities */
 
 .debug {
     border: 1px solid red;
 }
 
+/* flex */
 
+.d-flex {
+    display: flex;
+}
 
+.s-between {
+    justify-content: space-between;
+}
 
 
