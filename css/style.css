@@ -59,12 +59,20 @@ section {
 
 h1 {
     font-size: 4em;
+    font-weight: 1000;
+    margin-bottom: 50px;
+}
+
+
+p {
+    margin-bottom: 30px;
 }
 
 img {
     width: 100%;
     display: block;
 }
+
 /* page macro */
 
 header {
@@ -76,8 +84,13 @@ header {
     background-color: var(--color-white);
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
 #jumbortron {
-    padding-top: 100px;
+    padding-top: 170px;
 }
 
 #jumbotron .container, 
@@ -85,8 +98,8 @@ header {
 #contact-partner .container-small,
 #operations .container,
 #customers .container-small,
-#faq .container-small, 
-footer .container {
+#faq .container-small 
+/* footer .container*/ { 
     position: relative;
     top: 100px;
 }
@@ -121,6 +134,7 @@ footer .container {
 
 .btn {
     padding: 5px 10px;
+    display: inline;
 }
 
 /* background */
@@ -144,6 +158,9 @@ footer .container {
     padding: 15px;
 }
 
+.p-top {
+    padding-top: 30px;
+}
 .w-30 {
     width: 30%;
 }
@@ -175,4 +192,12 @@ footer .container {
 }
 .wrap {
     flex-wrap: wrap;
+}
+
+/* span */
+
+.arrow {
+    font-size: 3em;
+    margin-top: 100px;
+    display: inline-block;
 }
