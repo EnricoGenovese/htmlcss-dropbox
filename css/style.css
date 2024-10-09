@@ -24,6 +24,12 @@
     --color-logo-yellow: #ffd830;
 }
 
+/* utilities */
+
+/* .debug {
+    border: 1px solid red;
+} */
+
 /* generals */
 
 html {
@@ -43,12 +49,22 @@ ul {
 a {
     text-decoration: none;
     padding: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+section {
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 4em;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
 /* page macro */
 
 header {
@@ -65,11 +81,14 @@ header {
 }
 
 #jumbotron .container, 
-#sub-plans .container-small 
-#contact-partner .container-small
-#operations {
+#sub-plans .container-small, 
+#contact-partner .container-small,
+#operations .container,
+#customers .container-small,
+#faq .container-small, 
+footer .container {
     position: relative;
-    top: 70px;
+    top: 100px;
 }
 
 /* containers  */
@@ -89,21 +108,40 @@ header {
     max-width: calc(100% / 3);
 
 }
+
+.customers-brands>div {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+.brand {
+    width: 50%;
+    height: 50%;
+}
+
+.btn {
+    padding: 5px 10px;
+}
+
 /* background */
 
 .bg-light {
     background-color: var(--color-light-blue);
 }
-/* utilities */
 
-.debug {
-    border: 1px solid red;
+.bg-blue {
+ background-color: var(--color-blue);
 }
 
+/* colors */
+
+.text-white {
+    color: var(--color-white);
+}
 /* space */
 
-.p-20 {
-    padding: 20px;
+.p-15 {
+    padding: 15px;
 }
 
 .w-30 {
@@ -124,10 +162,17 @@ header {
     flex-direction: row-reverse;
 }
 
+.c-flex {
+    flex-direction: column;
+}
+
 .s-between {
     justify-content: space-between;
 }
 
+.a-items {
+    align-items: center;
+}
 .wrap {
     flex-wrap: wrap;
 }
