@@ -45,6 +45,10 @@ a {
     padding: 5px;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 /* page macro */
 
 header {
@@ -56,6 +60,17 @@ header {
     background-color: var(--color-white);
 }
 
+#jumbortron {
+    padding-top: 100px;
+}
+
+#jumbotron .container, 
+#sub-plans .container-small 
+#contact-partner .container-small
+#operations {
+    position: relative;
+    top: 70px;
+}
 
 /* containers  */
 
@@ -70,11 +85,33 @@ header {
     margin: 0 auto;
 }
 
+.img {
+    max-width: calc(100% / 3);
 
+}
+/* background */
+
+.bg-light {
+    background-color: var(--color-light-blue);
+}
 /* utilities */
 
 .debug {
     border: 1px solid red;
+}
+
+/* space */
+
+.p-20 {
+    padding: 20px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
 }
 
 /* flex */
@@ -83,8 +120,14 @@ header {
     display: flex;
 }
 
+.row-rev {
+    flex-direction: row-reverse;
+}
+
 .s-between {
     justify-content: space-between;
 }
 
-
+.wrap {
+    flex-wrap: wrap;
+}
