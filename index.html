@@ -29,7 +29,7 @@
         </nav>
      </header>
      <!-- main -->
-      <main class="debug">
+      <main>
         <section id="jumbortron" class="bg-light debug">
             <div class="container debug">
                 <h1>
@@ -48,7 +48,7 @@
                         Annulla in qualsiasi momento
                     </p>
                     <div>
-                        <a href=""><span class="arrow">&#129131;</span></a>
+                        <a href="#sub-plans"><span class="arrow">&#129131;</span></a>
                     </div>
                 </div>
                 <div class="w-70 debug">
@@ -69,12 +69,12 @@
                     </p>
                 </div>
             </div>
-            <div class=" container-small d-flex s-between gap">     <!-- contenitore colonne-->
-                <div class="subsciption d-flex c-flex">             <!-- colonna 1 -->
+            <div class="container-small d-flex s-between gap">     <!-- contenitore colonne-->
+                <div class="subsciption d-flex c-flex p-15 borders">             <!-- colonna 1 -->
                     <div class="c-text p-15">
                         <span><i class="fa-solid fa-user"></i></span>Singolo
                     </div>
-                    <div>
+                    <div class="p-top">
                         <h3>Professional</h3>
                         <h4>&euro;12.00</h4>
                         <p>/mese</p>
@@ -93,7 +93,7 @@
                         <div class="d-flex m-30 f-start">
                             <a href="#call-to-action">oppure <span class="blue-link">acquista ora</span></a>
                         </div>
-                        <div class="d-flex c-flex m-80">
+                        <div class="d-flex c-flex mt-80">
                             <ul>
                                 <li><h4>Punti salienti del piano</h4></li>
                                 <li><span class="checkmark">&#x2714;</span>Invia file fino a 100 GB con Dropbox Transfer</li>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="subsciption d-flex c-flex">             <!-- colonna 2 -->
+                <div class="subsciption d-flex c-flex p-15 borders">            <!-- colonna 2 -->
                     <div class="c-text p-15">
                         <span><i class="fa-solid fa-user"></i></span>Singolo
                     </div>
@@ -125,7 +125,7 @@
                         <div class="d-flex m-30 f-start">
                             <a href="#call-to-action">oppure <span class="blue-link">acquista ora</span></a>
                         </div>
-                        <div class="d-flex c-flex m-80">
+                        <div class="d-flex c-flex mt-80">
                             <ul>
                                 <li><h4>Punti salienti del piano</h4></li>
                                 <li><span class="checkmark">&#x2714;</span>Invia file fino a 100 GB con Dropbox Transfer</li>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="subsciption d-flex c-flex">             <!-- colonna 3 -->
+                <div class="subsciption d-flex c-flex p-15 borders">            <!-- colonna 3 -->
                     <div class="c-text p-15">
                         <span><i class="fa-solid fa-user"></i></span>Singolo
                     </div>
@@ -160,7 +160,7 @@
                         <div class="d-flex m-30 f-start">
                             <a href="#call-to-action">oppure <span class="blue-link">acquista ora</span></a>
                         </div>
-                        <div class="d-flex c-flex m-80">
+                        <div class="d-flex c-flex mt-80">
                             <ul>
                                 <li><h4>Punti salienti del piano</h4></li>
                                 <li><span class="checkmark">&#x2714;</span>Invia file fino a 100 GB con Dropbox Transfer</li>
@@ -247,7 +247,8 @@
         
         <section id="customers">
             <div class="container-small w-70">
-                <h2>Più di 500.000 teams utilizzano Dropbox Business</h2>
+                <h2 class="mb-80">Più di 500.000 teams utilizzano Dropbox Business</h2>
+                <span class="blue-link"><a href="#">Scopri di più sui nostri clienti</a></span>
             </div>
             <div class="customers-brands d-flex">
                 <div class="d-flex wrap a">
@@ -272,23 +273,31 @@
         </section>
         
         <section id="call-to-action" class="bg-light">
-            <div class="container-small d-flex s-between ">
+            <div class="container-small d-flex s-between">
+                <div>
                     <h2 class="text-contrast">
-                        Lorem ipsum dolor sit amet.
-                    </h2>
-                    <div>
-                        button
-                    </div>
+                    Porta Dropbox Business nella tua azienda</h2>
                 </div>
+                <button class="btn btn-w borders">
+                    Inizia la tua prova gratuita
+                </button>
             </div>
         </section>
         <section id="faq" class="debug">
             <div>
-                <div class="container-small d-flex s-between">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, hic!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, hic!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, hic!</p>
+                <div class="container-small d-flex c-flex s-between">
+                    <h2>Lorem, ipsum.</h2>
+                    <div>
+                        <h4>Lorem ipsum dolor sit.</h4>
+                            <p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, hic!</p>
+                    </div>
+                    <div>
+                        <h4>Lorem ipsum dolor sit.</h4>
+                            <p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, hic!</p>
+                    </div>
+                        <h4>Lorem ipsum dolor sit.</h4>
+                            <p class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, hic!</p>
+                    </div>
                 </div>
             </div>
 
@@ -348,8 +357,9 @@
                     <li>Funzioni</li>
                 </ul>
             </div>
-            <div class="container">
-                <select name="language" id="languages">
+            <div class="d-flex menu">
+                <span class="fa-solid fa-globe"></span>
+                <select name="language" id="languages" class="p-left bg-dark text-white no-border">
                     <option value="italian">italiano</option>
                 </select>
             </div>

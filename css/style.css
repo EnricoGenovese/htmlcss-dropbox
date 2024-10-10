@@ -63,7 +63,7 @@ header nav a {
 }
 
 section {
-    margin-bottom: 30px;
+    margin: 200px auto;
 }
 
 h1 {
@@ -72,7 +72,8 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 30px;
+    font-size: 3em;
+    padding-bottom: 30px;
 }
 
 h3 {
@@ -107,13 +108,20 @@ header {
     width: 100%;
     z-index: 1000;
     background-color: var(--color-white);
-    box-shadow: 0 5 var(--color-white);
+    box-shadow: 0 5px var(--color-grey);
 }
 
 footer {
     background-color: black;
     color: white;
     max-height: 100%;
+}
+
+.menu {
+    margin: 0;
+    padding: 60px 0 0 0;
+    position: relative;
+    top: 0;
 }
 
 #jumbortron {
@@ -133,17 +141,29 @@ footer {
     padding: 15px 0;
 }
 
+#call-to-action {
+    padding: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#faq div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+
 footer {
     padding-bottom: 200px;
 }
 
-/* #jumbotron .container,  */
 #sub-plans .container-small, 
 #contact-partner .container-small,
 #operations .container-small,
-#call-to-action,
 #customers .container-small,
-#faq .container-small,
 footer .container { 
     position: relative;
     top: 100px;
@@ -176,7 +196,11 @@ footer .container {
     min-width: 270px;
 }
 
-.customers-brands > div {
+.customers-brands {
+    position: relative;
+    top: 100px;
+}
+ .customers-brands > div {
     aspect-ratio: 1/1;
     position: relative;
     top: 100px;
@@ -192,10 +216,26 @@ footer .container {
     display: inline-block;
 }
 
-.borders {
-    border: 1px solid var(--color-dark)
+.btn-w {
+    background-color: var(--color-white);
+    color: var(--color-dark);
 }
 
+.borders {
+    border: 1px solid var(--color-grey)
+}
+
+.border-top {
+    border-top: 1px solid var(--color-grey);
+}
+
+.border-bot {
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.no-border {
+    border: none;
+}
 /* background */
 
 .bg-light {
@@ -210,6 +250,9 @@ footer .container {
     background-color: var(--color-logo-green);
 }
 
+.bg-dark {
+    background-color: var(--color-dark);
+}
 /* colors */
 
 .text-white {
@@ -232,6 +275,7 @@ footer .container {
 .p-left {
     padding-left: 15px;
 }
+
 .w-30 {
     width: 30%;
 }
@@ -252,8 +296,12 @@ footer .container {
     margin-top: 30px;
 }
 
-.m-80 {
+.mt-80 {
     margin-top:80px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
 }
 
 .gap{
@@ -321,5 +369,19 @@ footer .container {
 .blue-link {
     color: blue; 
     border-bottom: solid blue;
+    margin-bottom: 50px;
 }
 
+.answer {
+	display: none;
+}
+
+/* hover effects */
+
+header nav a:hover header a {
+    border-bottom: 1px solid black;
+}
+
+#faq > div:hover .answer {
+	display: block;	
+}
