@@ -330,6 +330,10 @@ footer .container {
     margin-top: 30px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-80 {
     margin-top:80px;
 }
@@ -363,6 +367,10 @@ footer .container {
 
 .s-between {
     justify-content: space-between;
+}
+
+.f-shrink {
+    flex-shrink: 0;
 }
 
 .a-items {
