@@ -82,7 +82,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 p {
@@ -118,10 +118,12 @@ footer {
 }
 
 .menu {
-    margin: 0;
+    width: 10%;
+    margin-top: 60px;
     padding: 60px 0 0 0;
     position: relative;
-    top: 0;
+    bottom: 0;
+    border-top: 1px solid var(--color-white)
 }
 
 #jumbortron {
@@ -234,6 +236,14 @@ footer .container {
 
 .border-bot {
     border-bottom: 1px solid var(--color-grey);
+}
+
+.big-t-border {
+    border-top: 5px solid var(--color-grey);
+}
+
+.big-b-border {
+    border-bottom: 5px solid var(--color-grey);
 }
 
 .no-border {
@@ -405,12 +415,15 @@ footer .container {
 	display: none;
 }
 
+.d-arrow {
+    font-size: 2.5em;
+}
 /* hover effects */
 
 header nav a:hover header a {
     border-bottom: 1px solid black;
 }
-
+/* 
 #faq > div:hover .answer {
 	display: block;	
-}
+} */
