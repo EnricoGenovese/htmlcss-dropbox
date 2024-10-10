@@ -204,12 +204,15 @@ footer .container {
     aspect-ratio: 1/1;
     position: relative;
     top: 100px;
+
 }
 
 .brand {
     width: 50%;
     height: 50%;
+    /* transform: scale(50%); */
 }
+
 
 .btn {
     padding: 5px 10px;
@@ -246,13 +249,34 @@ footer .container {
  background-color: var(--color-blue);
 }
 
-.bg-green {
-    background-color: var(--color-logo-green);
-}
-
 .bg-dark {
     background-color: var(--color-dark);
 }
+
+.bg-logo-green {
+    background-color: var(--color-logo-green);
+}
+
+.bg-logo-magenta {
+    background-color: var(--color-logo-magenta);
+}
+
+.bg-logo-orange {
+    background-color: var(--color-logo-orange);
+}
+
+.bg-logo-red {
+    background-color: var(--color-logo-red);
+}
+
+.bg-logo-blue {
+    background-color: var(--color-logo-blue);
+}
+
+.bg-logo-yellow {
+    background-color: var(--color-logo-yellow);
+}
+
 /* colors */
 
 .text-white {
@@ -352,13 +376,18 @@ footer .container {
     bottom: 80px;
 }
 
-.payment {
+.payment, .selected {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border: 5px solid var(--color-blue);
+    border: 1px solid black;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 5px;
+}
+
+.selected {
+    border: 5px solid var(--color-blue);
 }
 
 .checkmark {
