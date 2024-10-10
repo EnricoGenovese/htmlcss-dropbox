@@ -69,7 +69,6 @@ section {
 h1 {
     font-size: 4em;
     font-weight: 1000;
-    margin-bottom: 50px;
 }
 
 h2 {
@@ -121,15 +120,24 @@ footer {
     padding-top: 170px;
 }
 
+.outside {
+    position: relative;
+    top: 80px;
+}
+
 #sub-plans p {
     margin-top: 50px;
+}
+
+#sub-plans ul li {
+    padding: 15px 0;
 }
 
 footer {
     padding-bottom: 200px;
 }
 
-#jumbotron .container, 
+/* #jumbotron .container,  */
 #sub-plans .container-small, 
 #contact-partner .container-small,
 #operations .container-small,
@@ -164,11 +172,11 @@ footer .container {
 }
 
 .subsciption {
-    width: calc((100% - 30) / 3);
-    min-width: 300px;
+    width: calc((100% - 30px) / 3);
+    min-width: 270px;
 }
 
-.customers-brands>div {
+.customers-brands > div {
     aspect-ratio: 1/1;
     position: relative;
     top: 100px;
@@ -209,7 +217,7 @@ footer .container {
 }
 
 .text-contrast {
-    color: ;
+    color: var(--color-contrast);
 }
 /* space */
 
@@ -232,16 +240,20 @@ footer .container {
     width: 70%;
 }
 
-.m-15 {
+.mr-15 {
     margin-right: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
 }
 
 .m-30 {
     margin-top: 30px;
 }
 
-.m-15 {
-    margin-left: 15px;
+.m-80 {
+    margin-top:80px;
 }
 
 .gap{
@@ -287,8 +299,9 @@ footer .container {
 
 .arrow {
     font-size: 3em;
-    margin-top: 100px;
     display: inline-block;
+    position: absolute;
+    bottom: 80px;
 }
 
 .payment {
@@ -303,5 +316,10 @@ footer .container {
 .checkmark {
     color: var(--color-blue);
     margin-right: 10px;
+}
+
+.blue-link {
+    color: blue; 
+    border-bottom: solid blue;
 }
 
